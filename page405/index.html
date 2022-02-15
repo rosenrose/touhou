@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Touhou Doujin - 동방 동인지</title>
+
+  <meta name="author" content="rosenrose" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Touhou Doujin - 동방 동인지" href="/touhou/feed.xml" />
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137254721-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137254721-1');
+</script>
+
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="동방 동인지 백업 보관소" />
+  
+
+   
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="https://rosenrose.github.io/page405/" />
+  <link rel="canonical" href="https://rosenrose.github.io/page405/" />
+  
+
+  
+  <meta property="og:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="동방 동인지 백업 보관소" />
+  
+
+  
+  <meta name="twitter:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+  
+  <meta name="twitter:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+  
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/touhou">Touhou Doujin</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!--
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/fsearch">전체 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/qsearch">제목 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/tags">태그</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randompage">랜덤 페이지</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randomlist">랜덤 리스트</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/aboutus">이 곳은?</a>
+
+          </li>
+        
+        -->
+        <li><a href="/touhou/fsearch">전체 검색</a></li>
+        <li><a href="/touhou/qsearch">빠른 검색</a></li>
+        <li><a href="/touhou/randompage">랜덤 페이지</a></li>
+        <li><a href="/touhou/randomlist">랜덤 리스트</a></li>
+        <li><a href="/touhou/tags">태그</a></li>
+        <li><a href="/touhou/about">정보</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/touhou ">
+          <img class="avatar-img" src="/touhou/img/reimu.png" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h2>동방 동인지 백업 보관소</h2>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_3279/">
+	  <h2 class="post-title">반복되는 일상</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.23
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_3279/">
+          <img src="https://dh33lpduw37to.cloudfront.net/ghap/3279/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+[電派絵師団 (しろし)] 반복되는 일상
+
+우와~ 명작.
+
+
+
+
+태그: 
+
+電派絵師団
+
+
+
+
+'동방 웹코믹' 카테고리의 다른 글
+
+칠석
+발렌타인 데이에 고백했다
+반복되는 일상
+기억할게
+빛을 외치며
+달의 꿈, 그 끝에...... (후편)
+
+
+
+
+
+
+
+
+
+
+
+ejd332
+
+
+2017.06.03 20:53 
+
+
+
+
+											울먹
+										
+
+
+
+
+
+
+Ccube1234
+
+
+2017.07.22 02:35 
+
+
+
+
+											결국다죽고 사쿠야혼자.. 끝없이 빙글빙글..
+										
+
+
+
+
+
+
+소브라이트
+
+
+2017.09.03 04:09 
+
+
+
+
+											소름
+										
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/ghap_3279/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/電派絵師団">電派絵師団</a>
+      
+      <a href="/touhou/tags/しろし">しろし</a>
+      
+      <a href="/touhou/tags/동방_웹코믹">동방_웹코믹</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_3278/">
+	  <h2 class="post-title">부드러운 맥박 [전연령 편집본]</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.23
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_3278/">
+          <img src="https://d2l1b145ht03q6.cloudfront.net/doujin/ghap/3278/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ビビットグレー] 부드러운 맥박
+
+원본도 번역본 있다는데 나는 모르겠구여
+
+
+
+
+태그: 
+
+ビビットグレー
+
+
+
+
+'동방 동인지' 카테고리의 다른 글
+
+피안 여성 엔솔로지
+Dark
+부드러운 맥박 [전연령 편집본]
+끝없는 세계
+살아있는 것의 온기
+왼쪽을 보라
+
+
+
+
+
+
+
+
+
+
+
+챠구애
+
+
+2017.05.23 19:11 
+
+
+
+
+											제목이 부드러운 백합으로 보였네 ㅋㅋㅋ
+										
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/ghap_3278/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/ビビットグレー">ビビットグレー</a>
+      
+      <a href="/touhou/tags/동방_동인지">동방_동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_3277/">
+	  <h2 class="post-title">끝없는 세계</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.23
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_3277/">
+          <img src="https://d2l1b145ht03q6.cloudfront.net/doujin/ghap/3277/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[赤橙] 끝없는 세계
+
+
+
+
+태그: 
+
+赤橙
+
+
+
+
+'동방 동인지' 카테고리의 다른 글
+
+Dark
+부드러운 맥박 [전연령 편집본]
+끝없는 세계
+살아있는 것의 온기
+왼쪽을 보라
+에이린과 케이네의 이야기
+
+
+
+
+
+
+
+
+
+
+
+음
+
+
+2018.02.11 13:55 
+
+
+
+
+											에이린:??
+										
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/ghap_3277/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/赤橙">赤橙</a>
+      
+      <a href="/touhou/tags/동방_동인지">동방_동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_3276/">
+	  <h2 class="post-title">살아있는 것의 온기</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.23
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_3276/">
+          <img src="https://d3hknah3u6pf18.cloudfront.net/ghap/3276/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        [色は匂えど] 살아있는 것의 온기 태그: 色は匂えど '동방 동인지' 카테고리의 다른 글 부드러운 맥박 [전연령 편집본] 끝없는 세계 살아있는 것의 온기 왼쪽을 보라 에이린과 케이네의 이야기 니토리의 거유 대작전 生 2018.10.16 02:52 와. 제 심경입니다. 제가 그토록 원하던, 딱 그 느낌의 유유코를 그려낸 작품, 어울리는 화풍과 스타일. 제 인생작 하나 찾은것 같군요~...
+        
+        
+          <a href="/touhou/ghap_3276/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/色は匂えど">色は匂えど</a>
+      
+      <a href="/touhou/tags/동방_동인지">동방_동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_3275/">
+	  <h2 class="post-title">기억할게</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.23
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_3275/">
+          <img src="https://d3hknah3u6pf18.cloudfront.net/ghap/3275/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+
+
+
+
+
+
+
+[リレバ] 기억할게
+
+
+
+
+
+태그: 
+
+リレバ
+
+
+
+
+'동방 웹코믹' 카테고리의 다른 글
+
+발렌타인 데이에 고백했다
+반복되는 일상
+기억할게
+빛을 외치며
+달의 꿈, 그 끝에...... (후편)
+달의 꿈, 그 끝에...... (전편)
+
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/ghap_3275/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/リレバ">リレバ</a>
+      
+      <a href="/touhou/tags/동방_웹코믹">동방_웹코믹</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_3274/">
+	  <h2 class="post-title">왼쪽을 보라</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.23
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_3274/">
+          <img src="https://d1r1ofl10x3cvx.cloudfront.net/ghap/3274/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[スアリテスミ (ひそな)] 왼쪽을 보라
+
+
+
+
+태그: 
+
+スアリテスミ
+
+
+
+
+'동방 동인지' 카테고리의 다른 글
+
+끝없는 세계
+살아있는 것의 온기
+왼쪽을 보라
+에이린과 케이네의 이야기
+니토리의 거유 대작전
+한여름의 조건
+
+
+
+
+
+
+
+
+
+
+
+Alef
+
+
+2017.05.23 22:29 
+
+
+
+
+											뒷 내용 30페이지 정도가 없는데 업로드하면서 소실된건가요?
+										
+
+
+
+ㄴ
+
+
+
+   그압
+
+
+2017.05.23 22:57 
+
+
+
+
+																죄송합니다. 두번에 걸쳐 올리던 중에 실수했습니다...
+															
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/ghap_3274/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/スアリテスミ">スアリテスミ</a>
+      
+      <a href="/touhou/tags/ひそな">ひそな</a>
+      
+      <a href="/touhou/tags/동방_동인지">동방_동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sniperriflesr_3391/">
+	  <h2 class="post-title">이쿠씨와 안경</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.22
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sniperriflesr_3391/">
+          <img src="https://d1r1ofl10x3cvx.cloudfront.net/sniperriflesr/3391/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        원제 : 衣玖さんとメガネ 작가 : パイン 역식자 : cwarock 출연 : 나가에 이쿠 , 히나나이 텐시 '귀여움/가벼움' 카테고리의 다른 글 에링모코 무릎배게 아큐 vs 옷키나 이쿠씨와 안경 만나서 반가워요 린노 마리사 4컷 심심한 인간 심심한 인간 Y 2017.05.22 10:22 오 안경인가... ┗ sniperrifle sniperrifle Y 2017.05.23 06:25 ^~^ 마법천사 마법천사 Y 2017.05.22...
+        
+        
+          <a href="/touhou/sniperriflesr_3391/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/パイン">パイン</a>
+      
+      <a href="/touhou/tags/캐릭터_나가에_이쿠">캐릭터_나가에_이쿠</a>
+      
+      <a href="/touhou/tags/캐릭터_히나나위_텐시">캐릭터_히나나위_텐시</a>
+      
+      <a href="/touhou/tags/귀여움／가벼움">귀여움／가벼움</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_3273/">
+	  <h2 class="post-title">성난 신</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.22
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_3273/">
+          <img src="https://d13d8depeciczd.cloudfront.net/ghap/3273/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        [薬味さらい (ゾウノセ)] 怒レ神 ィカレガミ 후... THQ 쪽은 효과음도 했더군요. 패배. 태그: 薬味さらい '동방 동인지/ㄴ이쪽 번역' 카테고리의 다른 글 헤카맘과 함께! 3 마지막 이야기 성난 신 미니 마리 주의 YES CONTINUE 별의 맨 끝에 있는 동쪽 ㅍㄱ 2017.05.22 01:59 웬일로 인육냠냠하는게 없네요 ㅇㅇ 2017.05.22 14:43 이번만큼은 착한 너굴맨 ㅇㅈ합니다 TEMPEST 2017.05.22...
+        
+        
+          <a href="/touhou/ghap_3273/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/薬味さらい">薬味さらい</a>
+      
+      <a href="/touhou/tags/ゾウノセ">ゾウノセ</a>
+      
+      <a href="/touhou/tags/동방_동인지／ㄴ이쪽_번역">동방_동인지／ㄴ이쪽_번역</a>
+      
+      <a href="/touhou/tags/장르_시리어스">장르_시리어스</a>
+      
+      <a href="/touhou/tags/캐릭터_레이센">캐릭터_레이센</a>
+      
+      <a href="/touhou/tags/캐릭터_순호">캐릭터_순호</a>
+      
+      <a href="/touhou/tags/캐릭터_스와코">캐릭터_스와코</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/enlsparker_2017-05-blog-post_66/">
+	  <h2 class="post-title">나의 언니 후보 정하기!!</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.22
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/enlsparker_2017-05-blog-post_66/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/enlsparker/2017-05-blog-post_66/001.png">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+출처 : 동방사령부
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+태그: 
+
+동인지
+月兎一途
+
+
+
+
+
+        
+        
+          <a href="/touhou/enlsparker_2017-05-blog-post_66/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/月兎一途">月兎一途</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/enlsparker_2017-05-blog-post_53/">
+	  <h2 class="post-title">언제나</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2017.05.22
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/enlsparker_2017-05-blog-post_53/">
+          <img src="https://d3hknah3u6pf18.cloudfront.net/enlsparker/2017-05-blog-post_53/001.png">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+출처 : 동방사령부
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+태그: 
+
+동인지
+火鳥でできるもん!
+
+
+
+
+
+        
+        
+          <a href="/touhou/enlsparker_2017-05-blog-post_53/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/火鳥でできるもん!">火鳥でできるもん!</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+</div>
+
+
+<ul class="pager main-pager">
+  
+  <li class="home">
+    <a href="/touhou/">&larr; 첫 페이지</a>
+  </li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page403">403</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page404">404</a>
+      </li>
+    
+  
+  <li>405</li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page406">406</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page407">407</a>
+      </li>
+    
+  
+  
+  <li class="end">
+    <a href="/touhou/page1554">끝 페이지(1554) &rarr;</a>
+  </li>
+  
+</ul>
+<div class="pageMover">
+  <input type="text" id="pageNumInput" style="width:48px" />
+  <input type="button" value="이동" onclick="movePage();" />
+  <script type="text/javascript">
+    function movePage() {
+      var pageNum = document.getElementById("pageNumInput").value;
+      location.href = "/touhou/page"+pageNum
+    }
+  </script>
+</div>
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/touhou/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:noname@email.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      rosenrose
+      &nbsp;&bull;&nbsp;
+      2022
+
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/touhou/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  </body>
+</html>

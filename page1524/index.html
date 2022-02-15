@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Touhou Doujin - 동방 동인지</title>
+
+  <meta name="author" content="rosenrose" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Touhou Doujin - 동방 동인지" href="/touhou/feed.xml" />
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137254721-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137254721-1');
+</script>
+
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="동방 동인지 백업 보관소" />
+  
+
+   
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="https://rosenrose.github.io/page1524/" />
+  <link rel="canonical" href="https://rosenrose.github.io/page1524/" />
+  
+
+  
+  <meta property="og:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="동방 동인지 백업 보관소" />
+  
+
+  
+  <meta name="twitter:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+  
+  <meta name="twitter:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+  
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/touhou">Touhou Doujin</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!--
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/fsearch">전체 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/qsearch">제목 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/tags">태그</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randompage">랜덤 페이지</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randomlist">랜덤 리스트</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/aboutus">이 곳은?</a>
+
+          </li>
+        
+        -->
+        <li><a href="/touhou/fsearch">전체 검색</a></li>
+        <li><a href="/touhou/qsearch">빠른 검색</a></li>
+        <li><a href="/touhou/randompage">랜덤 페이지</a></li>
+        <li><a href="/touhou/randomlist">랜덤 리스트</a></li>
+        <li><a href="/touhou/tags">태그</a></li>
+        <li><a href="/touhou/about">정보</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/touhou ">
+          <img class="avatar-img" src="/touhou/img/reimu.png" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h2>동방 동인지 백업 보관소</h2>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_704/">
+	  <h2 class="post-title">⑨의 왕 ~5~</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.09
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_704/">
+          <img src="https://d3iolf2bs625b0.cloudfront.net/sunmism/704/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        5편이라는 소리는 1~4도 있다는 거겠죠? ...있으신 분들은 보내주세요 (...) 저자 : くろくま本舗 원제 : キューのおうさま・5 이벤트 : C76 태그: C76 くろくま本舗 동방 동인지 '코믹/동인지' 관련 글 Spring Rain 슈퍼카 4컷 문화첩 번외편 ~순간냉동 아가씨~ 치르노, 일을 열심히! 시키에이키 2010.09.10 00:32 이분 개그센스도 정말 아스트랄하신... 랄까 카나코가 불쌍해... 까뮤 2010.09.10 01:05 재규어...
+        
+        
+          <a href="/touhou/sunmism_704/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c76">c76</a>
+      
+      <a href="/touhou/tags/くろくま本舗">くろくま本舗</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_702/">
+	  <h2 class="post-title">4컷 문화첩 번외편 ~순간냉동 아가씨~</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.09
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_702/">
+          <img src="https://d3hknah3u6pf18.cloudfront.net/sunmism/702/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        이번에는 4컷입니다. 표지의 치르노와 플랑이 참 귀엽군요 :) 저자 : トマト缶詰 원제 : 4コマ文花帖 番外編-瞬間冷凍恋娘- 이벤트 : 동방현문록 오와리1 태그: トマト缶詰 동방 동인지 현문록 오와리1 '코믹/동인지' 관련 글 슈퍼카 ⑨의 왕 ~5~ 치르노, 일을 열심히! 동방청첩 ~얼음, 여동생~ 푸름하늘 2010.09.10 00:11 표지부터 제가 좋아하는 커플링 치르x플랑이 나와서 기쁜!! 이랄까 그림체가 귀엽네요...
+        
+        
+          <a href="/touhou/sunmism_702/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/トマト缶詰">トマト缶詰</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/현문록_오와리1">현문록_오와리1</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_701/">
+	  <h2 class="post-title">치르노, 일을 열심히!</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.09
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_701/">
+          <img src="https://d1opk41f0tyet.cloudfront.net/sunmism/701/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        치르노와 다이쨩 콤비네이션! 카리스마 아가씨도 나오십니다 :) 저자 : 貴様それでも人間か!! 원제 : チルノのお仕事がんばる 이벤트 : C76 태그: C76 貴様それでも人間か!! 동방 동인지 '코믹/동인지' 관련 글 ⑨의 왕 ~5~ 4컷 문화첩 번외편 ~순간냉동 아가씨~ 동방청첩 ~얼음, 여동생~ 동방청첩 ~봄에 녹다~ 시키에이키 2010.09.10 00:30 치, 치르노가 일을..... 그나저나 레이무... 역시 사적이익에는 민감한건가!! 루믹스 2010.09.10...
+        
+        
+          <a href="/touhou/sunmism_701/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c76">c76</a>
+      
+      <a href="/touhou/tags/貴様それでも人間か!!">貴様それでも人間か!!</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_700/">
+	  <h2 class="post-title">동방청첩 ~얼음, 여동생~</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.09
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_700/">
+          <img src="https://d13d8depeciczd.cloudfront.net/sunmism/700/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        개인적으로 이번에 한 작품중 가장 마음에 들었습니다. 치르노 만세! 저자 : 青 원제 : 東方青帖・氷妹 태그: 青 동방 동인지 '코믹/동인지' 관련 글 4컷 문화첩 번외편 ~순간냉동 아가씨~ 치르노, 일을 열심히! 동방청첩 ~봄에 녹다~ 계간 샤코 Curry 정식 푸름하늘 2010.09.10 00:20 텐시가 동생이라니.. 이랄까 이번에도 훈훈한이야기! 이분 그림체도 마음에 드네요 ㅠㅠ 시키에이키 2010.09.10...
+        
+        
+          <a href="/touhou/sunmism_700/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/青">青</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_699/">
+	  <h2 class="post-title">동방청첩 ~봄에 녹다~</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.09
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_699/">
+          <img src="https://d1r1ofl10x3cvx.cloudfront.net/sunmism/699/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        치르노의 날도 다 저물어가는 이 시점에서 치르노의 날 기념 업로드! ...사실 ⑨개를 채우려고 했습니다만, 능력부족으로 8개밖에 못했습니다 OTL 아슬아슬하게 ⑨개를 채웠습니다! 물론 번역 중복체크는 안했기때문에 이이 다른 분이 한 작품이 있을지도 모르겠습니다만 아무튼 저는 제가 좋아서 하는거니 신경 안쓰렵니다. 아무튼 치르노의 날 기념 스페셜, 시작합니다! ...후기는 맨 마지막 포스팅에 몰아서...
+        
+        
+          <a href="/touhou/sunmism_699/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/青">青</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/예대제5">예대제5</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_696/">
+	  <h2 class="post-title">계간 샤코 Curry 정식</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.07
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_696/">
+          <img src="https://d3hknah3u6pf18.cloudfront.net/sunmism/696/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        작업용 파일이 담긴 USB를 놔두고 오는 바람에 땜빵용 번역입니다 죄송합니다(...) 서클 즉석마왕, 샤코의 콜라보레이션! 서로 스토리를 써주고 그림을 그렸군요 어쩐지 본카레 씨의 작품이 너무 정상적이다 싶었습니다ㅇ&amp;lt;-&amp;lt; 그럼 즐감하세요! 역시나 본카레 씨 스토리는 폭주하는군요(...) 보충설명 이 부분은 원래대사는　'ふぁぼった'로, 일본 트위터 등지에서 사용하는 신조어입니다. 하단의 작가 주석을 보면 'ふぁぼーる : [동사] favorite...
+        
+        
+          <a href="/touhou/sunmism_696/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/シャこ">シャこ</a>
+      
+      <a href="/touhou/tags/即席魔王">即席魔王</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/사랑의_마법은_마리사에게_맡겨둬!_2">사랑의_마법은_마리사에게_맡겨둬!_2</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_693/">
+	  <h2 class="post-title">앵화광1 - 일분소</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.05
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_693/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/sunmism/693/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        원제 : 桜花狂1～一分咲き～ 이벤트 : 예대제7 서클 : Golden Pe Done 장편이야기 입니다... 요청작이시구요. 이건 첫번째 내용입니다 후기에 따르면 세번째까지 나온 다고 하네요. 랄까 아무도 후기 안보는건가... 음 환상라이어 구하는데 성공했으니 슬슬 작업해볼까.. 태그: Golden Pe Done 동방 동인지 앵화광 예대제7 '코믹/동인지' 관련 글 동방청첩 ~봄에 녹다~ 계간 샤코 Curry...
+        
+        
+          <a href="/touhou/sunmism_693/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/golden_pe_done">golden_pe_done</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/앵화광">앵화광</a>
+      
+      <a href="/touhou/tags/예대제7">예대제7</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_692/">
+	  <h2 class="post-title">THE FLYING SCARLET DEVIL MANSION</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.05
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_692/">
+          <img src="https://d1opk41f0tyet.cloudfront.net/sunmism/692/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        케모노미치의 C77 작품입니다 표지가 굉장히 신성합니다 C77당시에 구매를 하려했는데 완매라는 충격적 사태로 인해 구하지도 못하고 심지어 위탁조차 없던 작품인데.. C78에 추가 인쇄 하면서 물론 원본도 구입했지만요(...) 아무튼 즐감하세요 :) 역시 케모노미치는 끝내줍니다. 그림이 너무 마음에 들어 ㅠㅠ 묘하게 내용면에서는 이전에 낸 작품은 '플라잉 더치맨'과 이어지는 면도 있는 것 같네요 후반부에...
+        
+        
+          <a href="/touhou/sunmism_692/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c77">c77</a>
+      
+      <a href="/touhou/tags/kemonomichi">kemonomichi</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_690/">
+	  <h2 class="post-title">코이시의 구루메 제2편</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_690/">
+          <img src="https://d3htrgpmip1qax.cloudfront.net/sunmism/690/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        [동인지] - 코이시의 구루메 1편은 여기로 재밌게 감상해주세요ㅋ 매번 노래만 번역하다가 동인지를 하려니 크오오오오!!!!!!! 오오 내가 올라운더라니 싶었는데 힘들어!!!!!! 하여튼 선미님께 이어받은 구루메입니다 엄청 부족하겠지만 잘 부탁드려요ㅎ 기숙사에서 눈치보며 하려니 힘들었음ㅠㅠ 아아 이 놈의 일코는... 으아 수정 끝!! [あなたを、廃人です。] 恋思のグルメ 【第二編】 (C76) 태그: C76 あなたを、廃人です。 동방 동인지 코이시의 구루메 '코믹/동인지' 관련...
+        
+        
+          <a href="/touhou/sunmism_690/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c76">c76</a>
+      
+      <a href="/touhou/tags/あなたを、廃人です。">あなたを、廃人です。</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코이시의_구루메">코이시의_구루메</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_689/">
+	  <h2 class="post-title">날 상기시켜줘</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.09.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_689/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/sunmism/689/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [ふあん亭] 원제 :  REMIND ME 이벤트 : C78 아아아 간단하게 될 줄 알았는데... 구타로 유명하신 후라리씨의 동인지입니다 이 서클은 앨리스 나오는 것 빼곤 즐겨보는 편... 이 서클에선 앨리스의 캐릭컨셉이 패륜이라 그런지... 음.. -_-; 요정대전쟁 내용입니다! 안습의 대요정 그럼 담 작에서 보아요... 태그: C78 ふあん亭 동방 동인지 '코믹/동인지' 관련...
+        
+        
+          <a href="/touhou/sunmism_689/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c78">c78</a>
+      
+      <a href="/touhou/tags/ふあん亭">ふあん亭</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+</div>
+
+
+<ul class="pager main-pager">
+  
+  <li class="home">
+    <a href="/touhou/">&larr; 첫 페이지</a>
+  </li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page1522">1522</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page1523">1523</a>
+      </li>
+    
+  
+  <li>1524</li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page1525">1525</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page1526">1526</a>
+      </li>
+    
+  
+  
+  <li class="end">
+    <a href="/touhou/page1554">끝 페이지(1554) &rarr;</a>
+  </li>
+  
+</ul>
+<div class="pageMover">
+  <input type="text" id="pageNumInput" style="width:48px" />
+  <input type="button" value="이동" onclick="movePage();" />
+  <script type="text/javascript">
+    function movePage() {
+      var pageNum = document.getElementById("pageNumInput").value;
+      location.href = "/touhou/page"+pageNum
+    }
+  </script>
+</div>
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/touhou/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:noname@email.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      rosenrose
+      &nbsp;&bull;&nbsp;
+      2022
+
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/touhou/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  </body>
+</html>

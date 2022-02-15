@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Touhou Doujin - 동방 동인지</title>
+
+  <meta name="author" content="rosenrose" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Touhou Doujin - 동방 동인지" href="/touhou/feed.xml" />
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137254721-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137254721-1');
+</script>
+
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="동방 동인지 백업 보관소" />
+  
+
+   
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="https://rosenrose.github.io/page1547/" />
+  <link rel="canonical" href="https://rosenrose.github.io/page1547/" />
+  
+
+  
+  <meta property="og:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="동방 동인지 백업 보관소" />
+  
+
+  
+  <meta name="twitter:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+  
+  <meta name="twitter:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+  
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/touhou">Touhou Doujin</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!--
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/fsearch">전체 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/qsearch">제목 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/tags">태그</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randompage">랜덤 페이지</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randomlist">랜덤 리스트</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/aboutus">이 곳은?</a>
+
+          </li>
+        
+        -->
+        <li><a href="/touhou/fsearch">전체 검색</a></li>
+        <li><a href="/touhou/qsearch">빠른 검색</a></li>
+        <li><a href="/touhou/randompage">랜덤 페이지</a></li>
+        <li><a href="/touhou/randomlist">랜덤 리스트</a></li>
+        <li><a href="/touhou/tags">태그</a></li>
+        <li><a href="/touhou/about">정보</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/touhou ">
+          <img class="avatar-img" src="/touhou/img/reimu.png" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h2>동방 동인지 백업 보관소</h2>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_80/">
+	  <h2 class="post-title">고양이를 키우자!</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_80/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/sunmism/80/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [NtyPe] 원제 : 猫を飼おう! 이벤트 : 홍루몽5 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: ntype 동방 동인지 홍루몽5 '코믹/동인지' 관련 글 APPLIQUE 쌍월초지 코가사네 귀신의 집~! 국화와 나이프 비광충네스트 2010.05.20 00:23 살묘자 ㅎㅎ 재미있내요 ㅎㅎ Unknown X 2010.06.05 13:19 오호 오린이 매우 귀엽군요 ㅋㅋ...
+        
+        
+          <a href="/touhou/sunmism_80/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/ntype">ntype</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/홍루몽5">홍루몽5</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_79/">
+	  <h2 class="post-title">코가사네 귀신의 집~!</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_79/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/sunmism/79/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [くやくしょ] 원제 : 小傘ンち おっばけや～しき! 이벤트 : C76 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: C76 くやくしょ 동방 동인지 '코믹/동인지' 관련 글 쌍월초지 고양이를 키우자! 국화와 나이프 언제나 고마워 (평소감사) 비광충네스트 2010.05.20 00:18 지령전 1면부터 끝면까지 다 나오내요 귀신의 집이 ㅎㅎㅎㅎ 루트 2010.05.24 13:24...
+        
+        
+          <a href="/touhou/sunmism_79/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c76">c76</a>
+      
+      <a href="/touhou/tags/くやくしょ">くやくしょ</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_78/">
+	  <h2 class="post-title">국화와 나이프</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_78/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/sunmism/78/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [鳩血] 원제 : 菊とナイフ 이벤트 : 홍루몽5 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: 鳩血 동방 동인지 홍루몽5 '코믹/동인지' 관련 글 고양이를 키우자! 코가사네 귀신의 집~! 언제나 고마워 (평소감사) Glorious Revolution 01／천재소녀 푸름하늘 2010.03.07 18:47 메이린이 재미있게 나온 동인지군요 ㅋㅋㅋㅋ 매ㅏㄴㄹ맴ㄴ 2013.06.15 21:38 러브쥬스...
+        
+        
+          <a href="/touhou/sunmism_78/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/鳩血">鳩血</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/홍루몽5">홍루몽5</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_77/">
+	  <h2 class="post-title">언제나 고마워 (평소감사)</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_77/">
+          <img src="https://d1jugg4tefwtah.cloudfront.net/sunmism/77/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [疲労熊] 원제 : 平素感佩 이벤트 : C77 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: c77 疲労熊 동방 동인지 '코믹/동인지' 관련 글 코가사네 귀신의 집~! 국화와 나이프 Glorious Revolution 01／천재소녀 환상향 이스케이프 링딩동 2010.10.24 14:13 마지막 레이무 참 엄청난 걸 숨기고 있는구만 ㄷㄷ ㅇㅅ 2012.04.29...
+        
+        
+          <a href="/touhou/sunmism_77/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c77">c77</a>
+      
+      <a href="/touhou/tags/疲労熊">疲労熊</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_76/">
+	  <h2 class="post-title">Glorious Revolution 01／천재소녀</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_76/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/sunmism/76/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [すとらいぷぱたーん] 원제 : Glorious Revolution 01／天才少女 이벤트 : 예대제5 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: すとらいぷぱたーん 동방 동인지 예대제5 '코믹/동인지' 관련 글 국화와 나이프 언제나 고마워 (평소감사) 환상향 이스케이프 환상 Romancia 푸름하늘 2010.03.07 18:55 무언가 심오 하군요 ㅋㅋ 하지만 이런분위기의 동인지도 좋죠!!ㅠㅠ ㅍㄴ...
+        
+        
+          <a href="/touhou/sunmism_76/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/すとらいぷぱたーん">すとらいぷぱたーん</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/예대제5">예대제5</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_75/">
+	  <h2 class="post-title">환상향 이스케이프</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_75/">
+          <img src="https://d1r1ofl10x3cvx.cloudfront.net/sunmism/75/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [BIBASUKU] 원제 : 幻想郷 エスケイプ 이벤트 : C77 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: BIBASUKU c77 동방 동인지 '코믹/동인지' 관련 글 언제나 고마워 (평소감사) Glorious Revolution 01／천재소녀 환상 Romancia 수해의 실 푸름하늘 2010.03.07 18:54 그림체도 좋고 내용도 훈훈한 내용이네요 ^^ 좋은번역 감사합니다 ㅋ...
+        
+        
+          <a href="/touhou/sunmism_75/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/bibasuku">bibasuku</a>
+      
+      <a href="/touhou/tags/c77">c77</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_74/">
+	  <h2 class="post-title">환상 Romancia</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_74/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/sunmism/74/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [KIRSCH] 원제 : 幻想ROMANCIA 이벤트 : C77 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: c77 KIRSCH 동방 동인지 '코믹/동인지' 관련 글 Glorious Revolution 01／천재소녀 환상향 이스케이프 수해의 실 궁극가학생물 유카의 플라워 샵 카자미 ~유 x 앨리 버전~ N.F.우츠호 2012.02.01 21:11 엄청난 핑크빛이네요 ㅋㅋㅋㅋ http://blog.naver.com/house6206...
+        
+        
+          <a href="/touhou/sunmism_74/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c77">c77</a>
+      
+      <a href="/touhou/tags/kirsch">kirsch</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_73/">
+	  <h2 class="post-title">수해의 실</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_73/">
+          <img src="https://d1r1ofl10x3cvx.cloudfront.net/sunmism/73/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [KEMONOMICHI] 원제 : 樹海のいと 이벤트 : 홍루몽5 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: KEMONOMCHI 동방 동인지 홍루몽5 '코믹/동인지' 관련 글 환상향 이스케이프 환상 Romancia 궁극가학생물 유카의 플라워 샵 카자미 ~유 x 앨리 버전~ 깨끗하고 올바른 풍신소녀 attica 2010.11.17 23:06 허...대체 왜 이런 물건에...
+        
+        
+          <a href="/touhou/sunmism_73/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/kemonomichi">kemonomichi</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/홍루몽5">홍루몽5</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_72/">
+	  <h2 class="post-title">궁극가학생물 유카의 플라워 샵 카자미 ~유 x 앨리 버전~</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_72/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/sunmism/72/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [KEMONOMICHI] 원제 : U.S.C. Yuka's Flower Shop KAZAMI YU×ARI ver. 이벤트 : C76 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: C76 KEMONOMCHI 동방 동인지 '코믹/동인지' 관련 글 환상 Romancia 수해의 실 깨끗하고 올바른 풍신소녀 유아하게 피어라, 묵염의 벚꽃 네버엔딩 2010.06.23 00:04 몹시 대단한 동인지네요...라기보단...
+        
+        
+          <a href="/touhou/sunmism_72/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c76">c76</a>
+      
+      <a href="/touhou/tags/kemonomichi">kemonomichi</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/sunmism_71/">
+	  <h2 class="post-title">깨끗하고 올바른 풍신소녀</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2010.03.04
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/sunmism_71/">
+          <img src="https://d3htrgpmip1qax.cloudfront.net/sunmism/71/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        저자 : [VISIONNERZ] 원제 : 清く正しい風神少女 이벤트 : C76 ※본 작품은 「上海アリス幻樂団」제작의 『東方Project』의 이차 창작물 입니다. ﻿﻿ ─────────────────────────────────────────────────────────────   태그: C76 VISIONNERZ 동방 동인지 '코믹/동인지' 관련 글 수해의 실 궁극가학생물 유카의 플라워 샵 카자미 ~유 x 앨리 버전~ 유아하게 피어라, 묵염의 벚꽃 비야비야 내리거라 리라호 2010.03.21 01:01 이작가님꺼 웃기죠 아마...
+        
+        
+          <a href="/touhou/sunmism_71/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/c76">c76</a>
+      
+      <a href="/touhou/tags/visionnerz">visionnerz</a>
+      
+      <a href="/touhou/tags/동방">동방</a>
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/코믹／동인지">코믹／동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+</div>
+
+
+<ul class="pager main-pager">
+  
+  <li class="home">
+    <a href="/touhou/">&larr; 첫 페이지</a>
+  </li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page1545">1545</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page1546">1546</a>
+      </li>
+    
+  
+  <li>1547</li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page1548">1548</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page1549">1549</a>
+      </li>
+    
+  
+  
+  <li class="end">
+    <a href="/touhou/page1554">끝 페이지(1554) &rarr;</a>
+  </li>
+  
+</ul>
+<div class="pageMover">
+  <input type="text" id="pageNumInput" style="width:48px" />
+  <input type="button" value="이동" onclick="movePage();" />
+  <script type="text/javascript">
+    function movePage() {
+      var pageNum = document.getElementById("pageNumInput").value;
+      location.href = "/touhou/page"+pageNum
+    }
+  </script>
+</div>
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/touhou/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:noname@email.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      rosenrose
+      &nbsp;&bull;&nbsp;
+      2022
+
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/touhou/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  </body>
+</html>

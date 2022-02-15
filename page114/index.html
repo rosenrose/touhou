@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Touhou Doujin - 동방 동인지</title>
+
+  <meta name="author" content="rosenrose" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Touhou Doujin - 동방 동인지" href="/touhou/feed.xml" />
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137254721-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137254721-1');
+</script>
+
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="동방 동인지 백업 보관소" />
+  
+
+   
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="https://rosenrose.github.io/page114/" />
+  <link rel="canonical" href="https://rosenrose.github.io/page114/" />
+  
+
+  
+  <meta property="og:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="동방 동인지 백업 보관소" />
+  
+
+  
+  <meta name="twitter:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+  
+  <meta name="twitter:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+  
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/touhou">Touhou Doujin</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!--
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/fsearch">전체 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/qsearch">제목 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/tags">태그</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randompage">랜덤 페이지</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randomlist">랜덤 리스트</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/aboutus">이 곳은?</a>
+
+          </li>
+        
+        -->
+        <li><a href="/touhou/fsearch">전체 검색</a></li>
+        <li><a href="/touhou/qsearch">빠른 검색</a></li>
+        <li><a href="/touhou/randompage">랜덤 페이지</a></li>
+        <li><a href="/touhou/randomlist">랜덤 리스트</a></li>
+        <li><a href="/touhou/tags">태그</a></li>
+        <li><a href="/touhou/about">정보</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/touhou ">
+          <img class="avatar-img" src="/touhou/img/reimu.png" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h2>동방 동인지 백업 보관소</h2>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
+  <article class="post-preview">
+    <a href="/touhou/nonicname_12/">
+	  <h2 class="post-title">33 -결혼활동 사나에씨(33) 순정파-</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.11.01
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/nonicname_12/">
+          <img src="https://dh33lpduw37to.cloudfront.net/nonicname/12/001.png">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+역:NLP
+작가: GP-KIDS
+
+
+
+태그: 
+
+GP-KIDS
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/nonicname_12/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/gp-kids">gp-kids</a>
+      
+      <a href="/touhou/tags/분류없음">분류없음</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/nonicname_11/">
+	  <h2 class="post-title">Three Fairies ~Little Stone Heart~ vol.3</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.11.01
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/nonicname_11/">
+          <img src="https://d1jugg4tefwtah.cloudfront.net/nonicname/11/001.png">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+역:NLP
+작가: 히라사카
+
+
+
+태그: 
+
+くらっしゅハウス
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/nonicname_11/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/くらっしゅハウス">くらっしゅハウス</a>
+      
+      <a href="/touhou/tags/분류없음">분류없음</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/nonicname_10/">
+	  <h2 class="post-title">데이트 라는 개념</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.11.01
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/nonicname_10/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/nonicname/10/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+작가: 와이티
+
+
+
+태그: 
+
+ワイテイ
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/nonicname_10/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/ワイテイ">ワイテイ</a>
+      
+      <a href="/touhou/tags/분류없음">분류없음</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_5052/">
+	  <h2 class="post-title">렌코 와 메리</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.11.01
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_5052/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/ghap/5052/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        [えせねこてーる (えせねこ)] 렌코 와 메리 태그: えせねこてーる 장르:일상 캐릭터:비봉 '동방 동인지' 카테고리의 다른 글 싯포 크로니클 (꼬리 연대기) 환상향 주민들의 여름 렌코 와 메리 경계 댄서즈 카게로 일기 5 Home 달과 태양이 만나는 장소 5 ㅇㅇ 2018.11.01 23:16 대가리가 빻아서 이젠 동방과 칸코레도 구분 못하냐 ㄴ 그압 2018.11.01 23:20 미안해 ♫♫♪...
+        
+        
+          <a href="/touhou/ghap_5052/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/えせねこてーる">えせねこてーる</a>
+      
+      <a href="/touhou/tags/장르_일상">장르_일상</a>
+      
+      <a href="/touhou/tags/캐릭터_비봉">캐릭터_비봉</a>
+      
+      <a href="/touhou/tags/えせねこ">えせねこ</a>
+      
+      <a href="/touhou/tags/동방_동인지">동방_동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_1223/">
+	  <h2 class="post-title">환상향 주민들의 여름</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.11.01
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_1223/">
+          <img src="https://d13d8depeciczd.cloudfront.net/ghap/1223/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        [FLIPFLOPs] 환상향 주민들의 여름 세로 식질 유배소에서 탈출 태그: FLIPFLOPs '동방 동인지' 카테고리의 다른 글 꽃을 잔뜩 보자 싯포 크로니클 (꼬리 연대기) 환상향 주민들의 여름 렌코 와 메리 경계 댄서즈 카게로 일기 5 ㅇㅇ 2018.10.17 01:59 왜 플립플롭스는 세로 식질이 많을까... 서체도 기본 서체... 이딴식으로 식질해놓고 자랑스럽게 자기 블로그 적어놓는건...
+        
+        
+          <a href="/touhou/ghap_1223/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/flipflops">flipflops</a>
+      
+      <a href="/touhou/tags/동방_동인지">동방_동인지</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_17336/">
+	  <h2 class="post-title">마중 뽀뽀</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.10.31
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_17336/">
+          <img src="https://d1r1ofl10x3cvx.cloudfront.net/lilybin/17336/001.png">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+SUO레밀리아x사쿠야
+
+
+
+태그: 
+
+suo
+
+
+
+
+'동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글
+
+
+[동방] 반키 할로윈  (1)
+
+
+[동방] 천공장 사계이변! 소녀출동!  (0)
+
+
+[동방] 꿈...  (1)
+
+
+[동방] 마중 뽀뽀  (0)
+
+
+[동방] 도레미씨는 사구메씨의 이거죠?+&amp;amp;  (3)
+
+
+[동방] 감·빙·천 이변 원흉들 일상 만화  (0)
+
+
+[동방] 악몽이라도 좋을지도?  (0)
+
+
+
+
+
+Comments 0
+
+
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/lilybin_17336/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/suo">suo</a>
+      
+      <a href="/touhou/tags/캐릭터_레밀리아">캐릭터_레밀리아</a>
+      
+      <a href="/touhou/tags/캐릭터_사쿠야">캐릭터_사쿠야</a>
+      
+      <a href="/touhou/tags/커플링_레밀리아x사쿠야">커플링_레밀리아x사쿠야</a>
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/ghap_4994/">
+	  <h2 class="post-title">당신과 할로윈 랑데부</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.10.31
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/ghap_4994/">
+          <img src="https://d1jugg4tefwtah.cloudfront.net/ghap/4994/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        [KirororO (キレロ)] 당신과 할로윈 랑데부 예전에 샀던 것들 중에 할로윈 책이 있어서 해봤습니다. 번역이 이젠 존나게 지겹네요 태그: KirororO 장르:일상 캐릭터:레밀리아 캐릭터:메이링 캐릭터:사쿠야 캐릭터:소악마 캐릭터:파츄리 캐릭터:플랑 '동방 동인지/ㄴ이쪽 번역' 카테고리의 다른 글 당신과 할로윈 랑데부 Crazy Summer 환상향 가위바위보 대회 나만의 마법, 나만의 나 진짜 나 드라이브 다이버 브베 2018.10.31 00:40...
+        
+        
+          <a href="/touhou/ghap_4994/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/kirororo">kirororo</a>
+      
+      <a href="/touhou/tags/장르_일상">장르_일상</a>
+      
+      <a href="/touhou/tags/캐릭터_레밀리아">캐릭터_레밀리아</a>
+      
+      <a href="/touhou/tags/캐릭터_메이링">캐릭터_메이링</a>
+      
+      <a href="/touhou/tags/캐릭터_사쿠야">캐릭터_사쿠야</a>
+      
+      <a href="/touhou/tags/캐릭터_소악마">캐릭터_소악마</a>
+      
+      <a href="/touhou/tags/캐릭터_파츄리">캐릭터_파츄리</a>
+      
+      <a href="/touhou/tags/캐릭터_플랑드르">캐릭터_플랑드르</a>
+      
+      <a href="/touhou/tags/キレロ">キレロ</a>
+      
+      <a href="/touhou/tags/동방_동인지／ㄴ이쪽_번역">동방_동인지／ㄴ이쪽_번역</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/touhoustory_35/">
+	  <h2 class="post-title">키리타니 웹코믹 42</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.10.29
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/touhoustory_35/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/touhoustory/35/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+桐谷(@kiri_tani_) 
+
+
+
+
+
+'그림 번역/키리타니' 카테고리의 다른 글
+
+키리타니 웹코믹 47~48
+키리타니 웹코믹43~45
+키리타니 웹코믹 42
+키리타니 웹코믹 40~41
+키리타니 웹코믹 39
+
+
+
+
+
+
+
+https://touhoustory.tistory.com/35
+
+
+        
+        
+          <a href="/touhou/touhoustory_35/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/그림_번역／키리타니">그림_번역／키리타니</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_17316/">
+	  <h2 class="post-title">도레미씨는 사구메씨의 이거죠?+&</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.10.29
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_17316/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/lilybin/17316/001.png">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+도레미x사구메 링고부끄(물리)
+
+
+
+태그: 
+
+
+
+
+
+'동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글
+
+
+[동방] 천공장 사계이변! 소녀출동!  (0)
+
+
+[동방] 꿈...  (1)
+
+
+[동방] 마중 뽀뽀  (0)
+
+
+[동방] 도레미씨는 사구메씨의 이거죠?+&amp;amp;  (3)
+
+
+[동방] 감·빙·천 이변 원흉들 일상 만화  (0)
+
+
+[동방] 악몽이라도 좋을지도?  (0)
+
+
+[동방] 천천히 말하기  (1)
+
+
+
+
+
+Comments 3
+
+
+
+
+
+
+
+우동게 |
+                                |
+                               
+
+저게 뭐죠?
+
+
+
+        
+        
+          <a href="/touhou/lilybin_17316/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/캐릭터_도레미">캐릭터_도레미</a>
+      
+      <a href="/touhou/tags/캐릭터_사구메">캐릭터_사구메</a>
+      
+      <a href="/touhou/tags/커플링_도레미x사구메">커플링_도레미x사구메</a>
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_17315/">
+	  <h2 class="post-title">악몽이라도 좋을지도?</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2018.10.29
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_17315/">
+          <img src="https://d13d8depeciczd.cloudfront.net/lilybin/17315/001.png">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+도레미x사구메 .
+
+
+
+태그: 
+
+
+
+
+
+'동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글
+
+
+[동방] 마중 뽀뽀  (0)
+
+
+[동방] 도레미씨는 사구메씨의 이거죠?+&amp;amp;  (3)
+
+
+[동방] 감·빙·천 이변 원흉들 일상 만화  (0)
+
+
+[동방] 악몽이라도 좋을지도?  (0)
+
+
+[동방] 천천히 말하기  (1)
+
+
+[동방] 세이란 꼬리  (1)
+
+
+[동방] 진짜 능력  (1)
+
+
+
+
+
+Comments 0
+
+
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/lilybin_17315/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+</div>
+
+
+<ul class="pager main-pager">
+  
+  <li class="home">
+    <a href="/touhou/">&larr; 첫 페이지</a>
+  </li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page112">112</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page113">113</a>
+      </li>
+    
+  
+  <li>114</li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page115">115</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page116">116</a>
+      </li>
+    
+  
+  
+  <li class="end">
+    <a href="/touhou/page1554">끝 페이지(1554) &rarr;</a>
+  </li>
+  
+</ul>
+<div class="pageMover">
+  <input type="text" id="pageNumInput" style="width:48px" />
+  <input type="button" value="이동" onclick="movePage();" />
+  <script type="text/javascript">
+    function movePage() {
+      var pageNum = document.getElementById("pageNumInput").value;
+      location.href = "/touhou/page"+pageNum
+    }
+  </script>
+</div>
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/touhou/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:noname@email.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      rosenrose
+      &nbsp;&bull;&nbsp;
+      2022
+
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/touhou/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  </body>
+</html>

@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Touhou Doujin - 동방 동인지</title>
+
+  <meta name="author" content="rosenrose" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Touhou Doujin - 동방 동인지" href="/touhou/feed.xml" />
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137254721-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137254721-1');
+</script>
+
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/touhou/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="동방 동인지 백업 보관소" />
+  
+
+   
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="https://rosenrose.github.io/page1228/" />
+  <link rel="canonical" href="https://rosenrose.github.io/page1228/" />
+  
+
+  
+  <meta property="og:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="동방 동인지 백업 보관소" />
+  
+
+  
+  <meta name="twitter:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%Y.%m.%d&quot; }} {% if post.image %} {% endif %} {% if post.tags.size &gt; 0 %} Tags: {% if site.link-tags %} {% for tag in post.tags...">
+  
+
+  
+  <meta name="twitter:image" content="https://rosenrose.github.io/img/reimu.png" />
+  
+
+  
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/touhou">Touhou Doujin</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!--
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/fsearch">전체 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/qsearch">제목 검색</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/tags">태그</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randompage">랜덤 페이지</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/randomlist">랜덤 리스트</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/touhou/aboutus">이 곳은?</a>
+
+          </li>
+        
+        -->
+        <li><a href="/touhou/fsearch">전체 검색</a></li>
+        <li><a href="/touhou/qsearch">빠른 검색</a></li>
+        <li><a href="/touhou/randompage">랜덤 페이지</a></li>
+        <li><a href="/touhou/randomlist">랜덤 리스트</a></li>
+        <li><a href="/touhou/tags">태그</a></li>
+        <li><a href="/touhou/about">정보</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/touhou ">
+          <img class="avatar-img" src="/touhou/img/reimu.png" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h2>동방 동인지 백업 보관소</h2>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
+  <article class="post-preview">
+    <a href="/touhou/enlsparker_2014-07-blog-post_835/">
+	  <h2 class="post-title">죽림의 꽃, 잠자는 공주 - 후편</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.08
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/enlsparker_2014-07-blog-post_835/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/enlsparker/2014-07-blog-post_835/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+출처 : 선미즘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+태그: 
+
+동인지
+canaria
+canaria mint
+
+
+
+
+
+        
+        
+          <a href="/touhou/enlsparker_2014-07-blog-post_835/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/canaria">canaria</a>
+      
+      <a href="/touhou/tags/canaria_mint">canaria_mint</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/enlsparker_2014-07-blog-post_4279/">
+	  <h2 class="post-title">도스코이 피요니시모</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.08
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/enlsparker_2014-07-blog-post_4279/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/enlsparker/2014-07-blog-post_4279/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+출처 : 선미즘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+태그: 
+
+동인지
+即席魔王
+
+
+
+
+
+        
+        
+          <a href="/touhou/enlsparker_2014-07-blog-post_4279/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/即席魔王">即席魔王</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/enlsparker_2014-07-3_27/">
+	  <h2 class="post-title">달에 소원을 - 3편</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.08
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/enlsparker_2014-07-3_27/">
+          <img src="https://d1opk41f0tyet.cloudfront.net/enlsparker/2014-07-3_27/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+출처 : 선미즘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+태그: 
+
+동인지
+COCCO
+
+
+
+
+
+        
+        
+          <a href="/touhou/enlsparker_2014-07-3_27/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/cocco">cocco</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/enlsparker_2014-07-2092/">
+	  <h2 class="post-title">2092</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.08
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/enlsparker_2014-07-2092/">
+          <img src="https://d2ii1zcpu2dht0.cloudfront.net/enlsparker/2014-07-2092/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+
+
+
+출처 : 선미즘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+태그: 
+
+동인지
+武士的魂
+
+
+
+
+
+        
+        
+          <a href="/touhou/enlsparker_2014-07-2092/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동인지">동인지</a>
+      
+      <a href="/touhou/tags/武士的魂">武士的魂</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_1742/">
+	  <h2 class="post-title">신령묘, 심기루의 미코 후토 변화 만화</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.07
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_1742/">
+          <img src="https://d2l1b145ht03q6.cloudfront.net/doujin/lilybin/1742/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+            &amp;lt;Pixiv&amp;gt; 雪之丞やかん       번역 23    너무 공감된다....    └ 접기   태그: '동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글 [와카사기x카게로] 와카 카게 만화  (0) [나즈린x쇼우] 나즈쇼 만화  (2) [세이자x신묘마루] 스쿠나 귀여워요 외  (0) [미코x후토] 신령묘, 심기루의 미코 후토 변화 만화  (2) [신묘마루x세이자] 일촌법사 납치사건 (...이라고 신문에 쓰여있다)  (0) [세이자x신묘마루] 세이자 신묘마루 만화  (0) [세이자x신묘마루] 만쥬 무셔 계획...
+        
+        
+          <a href="/touhou/lilybin_1742/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_1741/">
+	  <h2 class="post-title">일촌법사 납치사건 (...이라고 신문에 쓰여있다)</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.07
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_1741/">
+          <img src="https://d1r1ofl10x3cvx.cloudfront.net/lilybin/1741/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+           &amp;lt;Pixiv&amp;gt; 花緒       역식 CYTOkine    작가분 : ぽて  pixiv주소 : http://www.pixiv.net/member.php?id=12998  원제 : 【東方輝針城】一寸法師誘拐事件　　（…と、新聞には書いてある）        태그: '동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글 [나즈린x쇼우] 나즈쇼 만화  (2) [세이자x신묘마루] 스쿠나 귀여워요 외  (0) [미코x후토] 신령묘, 심기루의 미코 후토 변화 만화  (2) [신묘마루x세이자] 일촌법사 납치사건 (...이라고 신문에 쓰여있다)  (0) [세이자x신묘마루] 세이자 신묘마루 만화  (0) [세이자x신묘마루] 만쥬 무셔 계획...
+        
+        
+          <a href="/touhou/lilybin_1741/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_1740/">
+	  <h2 class="post-title">세이자 신묘마루 만화</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.07
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_1740/">
+          <img src="https://d2l1b145ht03q6.cloudfront.net/doujin/lilybin/1740/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+              번역 23    아마노자쿠를 사랑하게된 일촌법사(한치동자)       └ 접기 태그: '동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글 [세이자x신묘마루] 스쿠나 귀여워요 외  (0) [미코x후토] 신령묘, 심기루의 미코 후토 변화 만화  (2) [신묘마루x세이자] 일촌법사 납치사건 (...이라고 신문에 쓰여있다)  (0) [세이자x신묘마루] 세이자 신묘마루 만화  (0) [세이자x신묘마루] 만쥬 무셔 계획 (미수)  (0) [카게로x와카사기] 카게와카 만화  (0) [와카사기x카게로] 와카사기 카게로 만화  (1)...
+        
+        
+          <a href="/touhou/lilybin_1740/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_1739/">
+	  <h2 class="post-title">만쥬 무셔 계획 (미수)</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.07
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_1739/">
+          <img src="https://d19j6j9wjau9qp.cloudfront.net/lilybin/1739/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+          &amp;lt;Pixiv&amp;gt; 花緒  역식자 CYTOkine    └ 접기            작가분 : ぽて    pixiv주소 : http://www.pixiv.net/member.php?id=12998    원제 :【東方輝針城】饅頭怖い計画（未遂）       작가 코멘트 :     小さくなれば食べ放題　って夢見た頃もあったけれど、実際どんなものなんでしょうね。それはともかく姫様は愛でたい可愛さ    작아지면 마음대로 먹을 수 있다, 고 꿈꿔왔던 때가 있었지만, 실제로는 어떨까요. 그건 어찌됐건 공주님은 귀여워 태그: '동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글 [미코x후토] 신령묘, 심기루의...
+        
+        
+          <a href="/touhou/lilybin_1739/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_1738/">
+	  <h2 class="post-title">카게와카 만화</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.07
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_1738/">
+          <img src="https://d2l1b145ht03q6.cloudfront.net/doujin/lilybin/1738/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+        
+
+  
+ 
+ &amp;lt;Pixiv&amp;gt; lolg
+
+ 번역 23
+
+ └ 접기
+
+
+
+
+
+태그: 
+
+
+
+
+
+'동방/웹코믹&amp;amp;영상(백합)' 카테고리의 다른 글
+
+
+[신묘마루x세이자] 일촌법사 납치사건 (...이라고 신문에 쓰여있다)  (0)
+
+
+[세이자x신묘마루] 세이자 신묘마루 만화  (0)
+
+
+[세이자x신묘마루] 만쥬 무셔 계획 (미수)  (0)
+
+
+[카게로x와카사기] 카게와카 만화  (0)
+
+
+[와카사기x카게로] 와카사기 카게로 만화  (1)
+
+
+[세키반키x코가사] 세키반키 코가사 만화  (0)
+
+
+[세이자x신묘마루] 키진과 스쿠나  (0)
+
+
+
+
+
+Comments 0
+
+
+
+
+
+
+
+
+
+
+        
+        
+          <a href="/touhou/lilybin_1738/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/touhou/lilybin_1737/">
+	  <h2 class="post-title">와카사기 카게로 만화</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on 2014.07.07
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/touhou/lilybin_1737/">
+          <img src="https://d2l1b145ht03q6.cloudfront.net/doujin/lilybin/1737/001.jpg">
+        </a>
+      </div>
+      <!--
+      <div class="post-entry">
+            &amp;lt;서클 carcharias!&amp;gt;       음... 개인적으로 모미카게를 지지하지만  이건 공식 설정에서 카게로와 와카사기히메는 친구기  때문에 나온거라 어쩔수 없는 커플.    가끔 보이는 유카리x유유코 느낌이랄까?          └ 접기 &amp;lt;雲海&amp;gt;                                               태그: '동방/웹코믹&amp;amp;영상(백합)'...
+        
+        
+          <a href="/touhou/lilybin_1737/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>-->
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/touhou/tags/동방／웹코믹&영상(백합)">동방／웹코믹&영상(백합)</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+</div>
+
+
+<ul class="pager main-pager">
+  
+  <li class="home">
+    <a href="/touhou/">&larr; 첫 페이지</a>
+  </li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page1226">1226</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page1227">1227</a>
+      </li>
+    
+  
+  <li>1228</li>
+  
+  
+    
+    
+    
+      <li>
+        <a href="/touhou/page1229">1229</a>
+      </li>
+    
+      <li>
+        <a href="/touhou/page1230">1230</a>
+      </li>
+    
+  
+  
+  <li class="end">
+    <a href="/touhou/page1554">끝 페이지(1554) &rarr;</a>
+  </li>
+  
+</ul>
+<div class="pageMover">
+  <input type="text" id="pageNumInput" style="width:48px" />
+  <input type="button" value="이동" onclick="movePage();" />
+  <script type="text/javascript">
+    function movePage() {
+      var pageNum = document.getElementById("pageNumInput").value;
+      location.href = "/touhou/page"+pageNum
+    }
+  </script>
+</div>
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/touhou/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:noname@email.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      rosenrose
+      &nbsp;&bull;&nbsp;
+      2022
+
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/touhou/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/touhou/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  </body>
+</html>
